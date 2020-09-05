@@ -424,10 +424,6 @@ img {
   font-size: 0.75rem;
 }
 
-.text-base {
-  font-size: 1rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
 }
@@ -571,10 +567,6 @@ img {
 
 .hover\:underline:hover {
   text-decoration: underline;
-}
-
-.tracking-widest {
-  letter-spacing: 0.1em;
 }
 
 .w-16 {
