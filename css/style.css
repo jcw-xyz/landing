@@ -194,10 +194,6 @@ img {
  * Add the correct display in IE 10.
  */
 
-[hidden] {
-  display: none;
-}
-
 /**
  * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
  * A thin layer on top of normalize.css that provides a starting point more
@@ -349,6 +345,17 @@ img {
   overflow: hidden;
 }
 
+.header_bg {
+  background: rgb(17, 18, 20);
+  background: linear-gradient(
+    0deg,
+    rgba(17, 18, 20, 0) 0%,
+    rgba(17, 18, 20, 0.7745213150289018) 19%,
+    rgba(17, 18, 20, 1) 53%,
+    rgba(17, 18, 20, 1) 100%
+  );
+}
+
 .bg-dark {
   --bg-opacity: 1;
   background-color: #111214;
@@ -389,10 +396,6 @@ img {
 
 .flex {
   display: flex;
-}
-
-.hidden {
-  display: none;
 }
 
 .flex-row {
@@ -492,8 +495,8 @@ img {
   margin-left: -0.5rem;
 }
 
-.-mt-3 {
-  margin-top: -0.75rem;
+.-mt-4 {
+  margin-top: -1rem;
 }
 
 .opacity-0 {
@@ -595,6 +598,14 @@ img {
 
 .z-50 {
   z-index: 50;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 @-webkit-keyframes spin {
