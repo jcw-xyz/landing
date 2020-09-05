@@ -1,0 +1,20 @@
+{
+  "name": "jcw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx live-server public",
+    "watch": "postcss css/tailwind.css -o css/style.css --watch",
+    "build": "NODE_ENV=production postcss css/tailwind.css -o css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.2",
+    "tailwindcss": "^1.7.6"
+  }
+}
