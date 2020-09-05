@@ -344,6 +344,11 @@ img {
   height: auto;
 }
 
+.logo a {
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
 .bg-dark {
   --bg-opacity: 1;
   background-color: #111214;
