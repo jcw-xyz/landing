@@ -182,7 +182,7 @@ void main() {
 let sh;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight / 1.8, WEBGL);
+  createCanvas(600, windowHeight / 1.8, WEBGL);
 
   //shader
   sh = createShader(vert, frag);
