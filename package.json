@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx live-server public",
+    "start": "npx live-server ",
     "watch": "postcss css/tailwind.css -o css/style.css --watch",
     "build": "NODE_ENV=production postcss css/tailwind.css -o css/style.css"
   },
