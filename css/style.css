@@ -477,6 +477,10 @@ img {
   margin-top: 8rem;
 }
 
+.-ml-2 {
+  margin-left: -0.5rem;
+}
+
 .opacity-75 {
   opacity: 0.75;
 }
