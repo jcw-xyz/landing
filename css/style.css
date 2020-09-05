@@ -683,6 +683,10 @@ img {
     justify-content: center;
   }
 
+  .lg\:text-5xl {
+    font-size: 3rem;
+  }
+
   .lg\:my-0 {
     margin-top: 0;
     margin-bottom: 0;
