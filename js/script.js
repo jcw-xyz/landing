@@ -133,8 +133,8 @@ float noise(vec2 st) {
 
 //variables
 vec3 lightDir = normalize(vec3(0.0,1.0,-1.0));
-vec3 bgCol = vec3(0.10,0.12,0.18);
-vec3 objCol = vec3(1.0,1.0,1.0);
+vec3 bgCol = vec3(0.07,0.07,0.08);
+vec3 objCol = vec3(0.95,0.93,0.89);
 
 
 float grid(vec2 uv, float num)
