@@ -194,6 +194,10 @@ img {
  * Add the correct display in IE 10.
  */
 
+[hidden] {
+  display: none;
+}
+
 /**
  * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
  * A thin layer on top of normalize.css that provides a starting point more
@@ -355,6 +359,10 @@ img {
   );
 }
 
+.scrollBtn {
+  transform: translateX(-50%);
+}
+
 .bg-dark {
   --bg-opacity: 1;
   background-color: #111214;
@@ -389,12 +397,20 @@ img {
   border-width: 1px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .block {
   display: block;
 }
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .flex-row {
@@ -441,6 +457,10 @@ img {
   height: 8rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -463,6 +483,11 @@ img {
 
 .leading-snug {
   line-height: 1.375;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .my-16 {
@@ -541,6 +566,10 @@ img {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -551,6 +580,18 @@ img {
 
 .left-0 {
   left: 0;
+}
+
+.bottom-12 {
+  bottom: 3rem;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.resize {
+  resize: both;
 }
 
 .fill-current {
@@ -597,6 +638,10 @@ img {
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .z-50 {
@@ -650,6 +695,11 @@ img {
   }
 }
 
+.animate-pulse {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 @media (min-width: 640px) {
 }
 
@@ -682,6 +732,10 @@ img {
     }
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -694,13 +748,22 @@ img {
     justify-content: center;
   }
 
-  .md\:text-5xl {
-    font-size: 3rem;
+  .md\:h-88 {
+    height: 22rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
   }
 
   .md\:my-0 {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .md\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   .md\:mx-auto {
@@ -721,8 +784,8 @@ img {
     padding-right: 0;
   }
 
-  .md\:w-3\/4 {
-    width: 75%;
+  .md\:w-1\/2 {
+    width: 50%;
   }
 }
 
@@ -731,21 +794,44 @@ img {
 
 @media (min-width: 1280px) {
 
+  .xl\:block {
+    display: block;
+  }
+
   .xl\:hidden {
     display: none;
   }
 
-  .xl\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+  .xl\:flex-row {
+    flex-direction: row;
   }
 
-  .xl\:px-0 {
-    padding-left: 0;
-    padding-right: 0;
+  .xl\:h-screen {
+    height: 100vh;
   }
 
-  .xl\:w-1\/2 {
-    width: 50%;
+  .xl\:text-5xl {
+    font-size: 3rem;
+  }
+
+  .xl\:my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .xl\:pt-84 {
+    padding-top: 21rem;
+  }
+
+  .xl\:text-center {
+    text-align: center;
+  }
+
+  .xl\:w-2\/5 {
+    width: 40%;
+  }
+
+  .xl\:w-3\/5 {
+    width: 60%;
   }
 }

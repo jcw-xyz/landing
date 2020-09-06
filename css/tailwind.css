@@ -16,4 +16,8 @@
   );
 }
 
+.scrollBtn {
+  transform: translateX(-50%);
+}
+
 @tailwind utilities;

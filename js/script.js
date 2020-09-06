@@ -134,6 +134,7 @@ float noise(vec2 st) {
 //variables
 vec3 lightDir = normalize(vec3(0.0,1.0,-1.0));
 vec3 bgCol = vec3(0.07,0.07,0.08);
+// vec3 bgCol = vec3(1,0.07,0.08);
 vec3 objCol = vec3(0.95,0.93,0.89);
 
 
@@ -182,7 +183,8 @@ void main() {
 let sh;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight / 1.8, WEBGL);
+  const container = document.querySelector(".shader");
+  createCanvas(container.offsetWidth, windowHeight / 1.8, WEBGL);
 
   //shader
   sh = createShader(vert, frag);

@@ -55,9 +55,7 @@
   </head>
   <body class="text-ivory bg-dark">
     <header class="fixed top-0 left-0 z-50 w-full header_bg">
-      <div
-        class="flex items-center justify-between p-6 xl:px-0 xl:w-1/2 xl:mx-auto"
-      >
+      <div class="flex items-center justify-between p-6">
         <div
           class="-mt-4 text-lg font-bold opacity-0 ease-in-out text-ivory logo duration-300"
         >
@@ -78,9 +76,11 @@
         </a>
       </div>
     </header>
-    <div class="px-6 md:container md:mx-auto md:w-3/4 xl:w-1/2 md:px-0">
-      <section class="w-full h-full pt-24">
-        <div class="font-sans text-3xl font-medium leading-snug md:text-5xl">
+    <div class="px-6 md:container md:mx-auto md:w-1/2 md:px-0">
+      <section class="w-full h-full pt-24 xl:h-screen xl:pt-84">
+        <div
+          class="font-sans text-3xl font-medium leading-snug md:text-4xl xl:text-5xl"
+        >
           <h1>JCW.</h1>
           <span>
             Cloud mining platform <br class="block xl:hidden" />
@@ -88,51 +88,82 @@
           </span>
         </div>
         <div
-          class="relative flex items-center justify-center w-full overflow-hidden"
+          class="relative flex flex-col items-center justify-center w-full overflow-hidden xl:flex-row"
         >
-          <main></main>
+          <div
+            class="flex items-center w-screen h-64 my-12 overflow-hidden md:h-88 md:my-16 xl:my-6 shader xl:w-2/5"
+          >
+            <main></main>
+          </div>
+          <div class="flex flex-col w-full xl:w-3/5">
+            <div class="hidden md:block leading-9">
+              With regular payouts, great customer support, high-end security,
+              system stability and by delivering fast and reliable pool
+              connectivity, JCW aims to provide the best cloud mining platform
+              for everyday users.
+            </div>
+            <div class="-ml-2 uppercas md:mt-6 leading-9">
+              <span class="flex items-center" href="#">
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 48 48"
+                    class="text-xs text-blue-100 fill-current"
+                  >
+                    <path
+                      d="M20 12l-2.83 2.83 9.17 9.17-9.17 9.17 2.83 2.83 12-12z"
+                    />
+                    <path d="M0 0h48v48h-48z" fill="none" />
+                  </svg>
+                </i>
+                <a href="#" class="ml-1 uppercase hover:underline">
+                  enter the app
+                </a>
+              </span>
+              <span class="flex items-center">
+                <i>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 48 48"
+                    class="text-xs text-blue-100 fill-current"
+                  >
+                    <path
+                      d="M20 12l-2.83 2.83 9.17 9.17-9.17 9.17 2.83 2.83 12-12z"
+                    />
+                    <path d="M0 0h48v48h-48z" fill="none" />
+                  </svg>
+                </i>
+                <a class="ml-1 uppercase hover:underline" href="#">
+                  setup miners
+                </a>
+              </span>
+            </div>
+          </div>
         </div>
-        <div class="-ml-2 uppercase leading-9">
-          <span class="flex items-center" href="#">
-            <i>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 48 48"
-                class="text-xs text-blue-100 fill-current"
-              >
-                <path
-                  d="M20 12l-2.83 2.83 9.17 9.17-9.17 9.17 2.83 2.83 12-12z"
-                />
-                <path d="M0 0h48v48h-48z" fill="none" />
-              </svg>
-            </i>
-            <a href="#" class="ml-1 hover:underline"> enter the app </a>
-          </span>
-          <span class="flex items-center">
-            <i>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="25"
-                viewBox="0 0 48 48"
-                class="text-xs text-blue-100 fill-current"
-              >
-                <path
-                  d="M20 12l-2.83 2.83 9.17 9.17-9.17 9.17 2.83 2.83 12-12z"
-                />
-                <path d="M0 0h48v48h-48z" fill="none" />
-              </svg>
-            </i>
-            <a class="ml-1 uppercase hover:underline" href="#">
-              setup miners
-            </a>
-          </span>
-        </div>
+        <a
+          onclick="handleScroll()"
+          class="absolute hidden cursor-pointer left-1/2 bottom-12 scrollBtn xl:block animate-pulse"
+          ><span>
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 16 16"
+              class="text-3xl text-ivory"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              /></svg></span
+        ></a>
       </section>
       <section class="w-full mt-48">
-        <h1 class="font-sans text-3xl font-bold">Mission</h1>
+        <h1 class="font-sans text-3xl font-bold xl:text-center">Mission</h1>
         <p class="mt-12 leading-9">
           JCW Mining was founded in 2017 by three childhood friends. Our team
           consists of different engineering backgrounds, bonded by the shared
@@ -142,7 +173,7 @@
         </p>
       </section>
       <section class="w-full mt-48">
-        <h1 class="font-sans text-3xl">Team</h1>
+        <h1 class="font-sans text-3xl xl:text-center" id="team">Team</h1>
         <div
           class="flex flex-col items-center mt-12 justify-evenly md:flex-row"
         >
@@ -295,6 +326,16 @@
           app.style.opacity = 0;
         }
       });
+
+      window.addEventListener("resize", function () {
+        document.location.reload();
+      });
+
+      function handleScroll() {
+        document.querySelector("#team").scrollIntoView({
+          behavior: "smooth",
+        });
+      }
     </script>
     <script src="js/func.js"></script>
     <script src="js/script.js"></script>
