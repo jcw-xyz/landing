@@ -18,13 +18,8 @@ module.exports = {
         "12": "3rem",
         "1/2": "50%",
       },
-      margin: {
-        "-1/2": "-50%",
-      },
     },
   },
-  variants: {
-    margin: ["responsive"],
-  },
+  variants: {},
   plugins: [],
 };
