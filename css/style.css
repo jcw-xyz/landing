@@ -590,10 +590,6 @@ img {
   left: 50%;
 }
 
-.resize {
-  resize: both;
-}
-
 .fill-current {
   fill: currentColor;
 }
