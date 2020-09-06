@@ -198,3 +198,8 @@ function draw() {
   sh.setUniform("u_time", millis() / 1000);
   rect(-width / 2, -height / 2, width, height);
 }
+
+function windowResized() {
+  setup();
+  draw();
+}
