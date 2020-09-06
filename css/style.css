@@ -811,6 +811,10 @@ img {
     margin-bottom: 0;
   }
 
+  .xl\:mt-48 {
+    margin-top: 12rem;
+  }
+
   .xl\:pt-84 {
     padding-top: 21rem;
   }
