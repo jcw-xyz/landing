@@ -664,6 +664,10 @@ img {
     justify-content: center;
   }
 
+  .md\:text-5xl {
+    font-size: 3rem;
+  }
+
   .md\:my-0 {
     margin-top: 0;
     margin-bottom: 0;
@@ -706,29 +710,25 @@ img {
       max-width: 1280px;
     }
   }
+}
 
-  .lg\:hidden {
+@media (min-width: 1280px) {
+
+  .xl\:hidden {
     display: none;
   }
 
-  .lg\:text-5xl {
-    font-size: 3rem;
-  }
-
-  .lg\:mx-auto {
+  .xl\:mx-auto {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .lg\:px-0 {
+  .xl\:px-0 {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .lg\:w-1\/2 {
+  .xl\:w-1\/2 {
     width: 50%;
   }
-}
-
-@media (min-width: 1280px) {
 }
